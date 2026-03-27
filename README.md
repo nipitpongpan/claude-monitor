@@ -2,7 +2,7 @@
 
 A real-time terminal dashboard that combines local Claude usage statistics with live plan-limit data from claude.ai. Track your token consumption, estimated costs, and plan limits across all your projects.
 
-![Dashboard showing token usage, cost estimates, and plan limit bars]
+![Dashboard showing token usage, cost estimates, and plan limit bars](screenshot.png)
 
 ## Features
 
