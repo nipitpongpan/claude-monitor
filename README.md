@@ -20,10 +20,12 @@ A real-time terminal dashboard that combines local Claude usage statistics with 
 
 ### Windows
 
+> Requires Python 3.8+ installed from [python.org](https://python.org). Dependencies are installed automatically on first run.
+
 ```bat
 git clone https://github.com/nipitpongpan/claude-monitor.git
 cd claude-monitor
-claude-monitor
+claude-monitor.bat
 ```
 
 Add the folder to your PATH so you can run `claude-monitor` from anywhere:
@@ -34,30 +36,18 @@ Add the folder to your PATH so you can run `claude-monitor` from anywhere:
 
 ### Linux / macOS
 
+> Dependencies are installed automatically on first run.
+
 ```bash
-git clone https://github.com/nipitpongpan/claude-monitor.git
-cd claude-monitor
-chmod +x claude-monitor.sh
-./claude-monitor.sh
+git clone https://github.com/nipitpongpan/claude-monitor.git ~/.local/share/claude-monitor
+chmod +x ~/.local/share/claude-monitor/claude-monitor.sh
+ln -sf ~/.local/share/claude-monitor/claude-monitor.sh ~/.local/bin/claude-monitor
 ```
 
-To run `claude-monitor` from anywhere, add the folder to your PATH:
+Then run from anywhere:
 
 ```bash
-# Add to ~/.bashrc or ~/.zshrc
-export PATH="$PATH:/path/to/claude-monitor"
-```
-
-Then reload your shell and call it as:
-
-```bash
-claude-monitor.sh
-```
-
-Or create an alias in your shell config:
-
-```bash
-alias claude-monitor="/path/to/claude-monitor/claude-monitor.sh"
+claude-monitor
 ```
 
 ## Getting Your Session Key (one-time setup)
